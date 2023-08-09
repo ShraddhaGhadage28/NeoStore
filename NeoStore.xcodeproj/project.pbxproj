@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		187210042A80CE66009C2977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187210032A80CE66009C2977 /* AppDelegate.swift */; };
 		187210062A80CE66009C2977 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187210052A80CE66009C2977 /* SceneDelegate.swift */; };
-		187210082A80CE66009C2977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187210072A80CE66009C2977 /* ViewController.swift */; };
+		187210082A80CE66009C2977 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187210072A80CE66009C2977 /* LoginViewController.swift */; };
 		1872100B2A80CE66009C2977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187210092A80CE66009C2977 /* Main.storyboard */; };
 		1872100D2A80CE68009C2977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1872100C2A80CE68009C2977 /* Assets.xcassets */; };
 		187210102A80CE68009C2977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1872100E2A80CE68009C2977 /* LaunchScreen.storyboard */; };
+		189D17E22A8213E800815CE1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189D17E12A8213E800815CE1 /* RegisterViewController.swift */; };
+		EECE2E0761C00E71839B2AB6 /* Pods_NeoStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E15FEED564833A42A3F1FD4 /* Pods_NeoStore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		187210002A80CE66009C2977 /* NeoStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187210032A80CE66009C2977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187210052A80CE66009C2977 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		187210072A80CE66009C2977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		187210072A80CE66009C2977 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1872100A2A80CE66009C2977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1872100C2A80CE68009C2977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1872100F2A80CE68009C2977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187210112A80CE68009C2977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189D17E12A8213E800815CE1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3128025126184401812175C4 /* Pods-NeoStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoStore.debug.xcconfig"; path = "Target Support Files/Pods-NeoStore/Pods-NeoStore.debug.xcconfig"; sourceTree = "<group>"; };
+		774F0144FBA66776249EC6F2 /* Pods-NeoStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoStore.release.xcconfig"; path = "Target Support Files/Pods-NeoStore/Pods-NeoStore.release.xcconfig"; sourceTree = "<group>"; };
+		8E15FEED564833A42A3F1FD4 /* Pods_NeoStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeoStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECE2E0761C00E71839B2AB6 /* Pods_NeoStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				187210022A80CE66009C2977 /* NeoStore */,
 				187210012A80CE66009C2977 /* Products */,
+				31D46FFCAF61963B077F922F /* Pods */,
+				FCE965D78B0C71463F5038E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +65,73 @@
 		187210022A80CE66009C2977 /* NeoStore */ = {
 			isa = PBXGroup;
 			children = (
-				187210032A80CE66009C2977 /* AppDelegate.swift */,
-				187210052A80CE66009C2977 /* SceneDelegate.swift */,
-				187210072A80CE66009C2977 /* ViewController.swift */,
-				187210092A80CE66009C2977 /* Main.storyboard */,
+				1872101B2A811B9D009C2977 /* Application */,
+				1872101A2A811B79009C2977 /* Storyboard */,
+				187210172A811B56009C2977 /* Model */,
+				187210182A811B5D009C2977 /* View */,
+				187210192A811B64009C2977 /* ViewModel */,
 				1872100C2A80CE68009C2977 /* Assets.xcassets */,
-				1872100E2A80CE68009C2977 /* LaunchScreen.storyboard */,
 				187210112A80CE68009C2977 /* Info.plist */,
 			);
 			path = NeoStore;
+			sourceTree = "<group>";
+		};
+		187210172A811B56009C2977 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		187210182A811B5D009C2977 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				187210072A80CE66009C2977 /* LoginViewController.swift */,
+				189D17E12A8213E800815CE1 /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		187210192A811B64009C2977 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1872101A2A811B79009C2977 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				187210092A80CE66009C2977 /* Main.storyboard */,
+				1872100E2A80CE68009C2977 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1872101B2A811B9D009C2977 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				187210052A80CE66009C2977 /* SceneDelegate.swift */,
+				187210032A80CE66009C2977 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		31D46FFCAF61963B077F922F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3128025126184401812175C4 /* Pods-NeoStore.debug.xcconfig */,
+				774F0144FBA66776249EC6F2 /* Pods-NeoStore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FCE965D78B0C71463F5038E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E15FEED564833A42A3F1FD4 /* Pods_NeoStore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 187210142A80CE68009C2977 /* Build configuration list for PBXNativeTarget "NeoStore" */;
 			buildPhases = (
+				E94F8F46C38BB49AE6338990 /* [CP] Check Pods Manifest.lock */,
 				18720FFC2A80CE66009C2977 /* Sources */,
 				18720FFD2A80CE66009C2977 /* Frameworks */,
 				18720FFE2A80CE66009C2977 /* Resources */,
+				654FC40819806D3637FCFE85 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +202,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		654FC40819806D3637FCFE85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeoStore/Pods-NeoStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeoStore/Pods-NeoStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeoStore/Pods-NeoStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E94F8F46C38BB49AE6338990 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeoStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18720FFC2A80CE66009C2977 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187210082A80CE66009C2977 /* ViewController.swift in Sources */,
+				187210082A80CE66009C2977 /* LoginViewController.swift in Sources */,
 				187210042A80CE66009C2977 /* AppDelegate.swift in Sources */,
 				187210062A80CE66009C2977 /* SceneDelegate.swift in Sources */,
+				189D17E22A8213E800815CE1 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +394,7 @@
 		};
 		187210152A80CE68009C2977 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3128025126184401812175C4 /* Pods-NeoStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +422,7 @@
 		};
 		187210162A80CE68009C2977 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774F0144FBA66776249EC6F2 /* Pods-NeoStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
