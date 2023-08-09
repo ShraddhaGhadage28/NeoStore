@@ -14,6 +14,7 @@
 		1872100D2A80CE68009C2977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1872100C2A80CE68009C2977 /* Assets.xcassets */; };
 		187210102A80CE68009C2977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1872100E2A80CE68009C2977 /* LaunchScreen.storyboard */; };
 		189D17E22A8213E800815CE1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189D17E12A8213E800815CE1 /* RegisterViewController.swift */; };
+		18DE18D22A8362FF008837F7 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE18D12A8362FF008837F7 /* ForgotPasswordViewController.swift */; };
 		EECE2E0761C00E71839B2AB6 /* Pods_NeoStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E15FEED564833A42A3F1FD4 /* Pods_NeoStore.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		1872100F2A80CE68009C2977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187210112A80CE68009C2977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189D17E12A8213E800815CE1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		18DE18D12A8362FF008837F7 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		3128025126184401812175C4 /* Pods-NeoStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoStore.debug.xcconfig"; path = "Target Support Files/Pods-NeoStore/Pods-NeoStore.debug.xcconfig"; sourceTree = "<group>"; };
 		774F0144FBA66776249EC6F2 /* Pods-NeoStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoStore.release.xcconfig"; path = "Target Support Files/Pods-NeoStore/Pods-NeoStore.release.xcconfig"; sourceTree = "<group>"; };
 		8E15FEED564833A42A3F1FD4 /* Pods_NeoStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeoStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 			children = (
 				187210072A80CE66009C2977 /* LoginViewController.swift */,
 				189D17E12A8213E800815CE1 /* RegisterViewController.swift */,
+				18DE18D12A8362FF008837F7 /* ForgotPasswordViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				187210082A80CE66009C2977 /* LoginViewController.swift in Sources */,
+				18DE18D22A8362FF008837F7 /* ForgotPasswordViewController.swift in Sources */,
 				187210042A80CE66009C2977 /* AppDelegate.swift in Sources */,
 				187210062A80CE66009C2977 /* SceneDelegate.swift in Sources */,
 				189D17E22A8213E800815CE1 /* RegisterViewController.swift in Sources */,
