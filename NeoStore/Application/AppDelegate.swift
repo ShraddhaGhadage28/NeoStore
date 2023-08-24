@@ -9,11 +9,20 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+       // let storyboard = UIStoryboard(name: "Login", bundle: nil)
+//
+//            // Instantiate the initial view controller from the storyboard
+//            let initialViewController = storyboard.instantiateInitialViewController(withIdennti)
+//
+//            // Set the initial view controller as the rootViewController of the window
+//            window?.rootViewController = initialViewController
+//
+//            // Make the window visible
+//            window?.makeKeyAndVisible()
         return true
     }
 

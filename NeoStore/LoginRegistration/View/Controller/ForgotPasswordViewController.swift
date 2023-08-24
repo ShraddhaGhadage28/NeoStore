@@ -9,12 +9,12 @@ import UIKit
 
 class ForgotPasswordViewController: UIViewController {
 
-    @IBOutlet weak var EmailView: UIView!
-    @IBOutlet weak var Email: UITextField!
+    @IBOutlet weak var emailView: ViewDesign!
+    @IBOutlet weak var email: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewColor()
+        emailView.setUpUI()
         placeholderColor()
     }
     
@@ -23,13 +23,11 @@ class ForgotPasswordViewController: UIViewController {
             .foregroundColor: UIColor.white, // Change this to your desired color
         ]
         let emailPlaceholder = NSAttributedString(string: "E-mail", attributes: attributes)
-        Email.attributedPlaceholder = emailPlaceholder
+        email.attributedPlaceholder = emailPlaceholder
     }
     
-    func viewColor() {
-        EmailView.layer.borderWidth = 1.0
-                EmailView.layer.borderColor = UIColor.white.cgColor
+   
+   @IBAction func backBtnClicked(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
     }
-
-
 }
